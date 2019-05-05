@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3s7-27-WTN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Combined-->
+        <scene sceneID="guR-VY-B8s">
+            <objects>
+                <viewController id="3s7-27-WTN" customClass="CombinedViewController" customModule="Survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H69-ci-tEa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PD-YG-Sbd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="d45-a5-cIP" kind="embed" identifier="ToVotingScreen" id="ymk-PT-oM0"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLi-Fo-l0e">
+                                <rect key="frame" x="0.0" y="323" width="375" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="2LT-RY-xQ0" kind="embed" identifier="ToResultsTableViewSreeen" id="SAo-78-1wc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Z7o-0I-RIj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="7zx-F8-HwJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5QJ-Oq-kiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="1030.4347826086957"/>
+        </scene>
+        <!--Voting-->
+        <scene sceneID="YN9-A7-eyV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Voting" id="d45-a5-cIP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDr-e1-6rQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="783"/>
+        </scene>
+        <!--ResultsTable-->
+        <scene sceneID="nhv-Yq-cwY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ResultsTable" id="2LT-RY-xQ0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lp-Hb-wfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="1139"/>
+        </scene>
+    </scenes>
+</document>
